@@ -1,0 +1,28 @@
+git status -> Veo el estado de mis archivos
+
+git add <ruta al archivo/ruta a la carpeta> -> agrego un archivo para hacer el commit despues
+
+git add . -> agrego todos los archivos que hayamos modificado
+
+git commit -> Hago el commit y me va a abrir un editor de texto para poner un mensaje multi linea
+
+git commit -m"Pongo mi mensaje aca" -> Hago un commit con un mensaje de una sola linea
+
+git push origin <branch> -> (Ej: git push origin master) Enviar nuestros commits al repositorio. (al servidor)
+
+git checkout -b <nombre del branch> -> Creo un branch  con ese nombre a partir de donde estoy.
+
+git checkout <nombre del branch> -> Me muevo entre branch ya existentes.
+
+git config --global user.name "miNombre" -> Configuro mi nombre global -> Se hace por unica vez
+git config --global user.email "miMail@mail.com" -> Configuro mi mail global -> se hace por unica vez
+
+git stash -> guardo temporalmente los cambios en una memoria intermedia.
+
+git stash pop -> traigo los archivos que hice stash antes (tener cuidado con el branch en el que estamos)
+
+git reset --soft HEAD~<N> -> Saco la cantidad N de commits.
+
+git log -> Me muestra los commits que ya hice
+
+git push --force origin <branch> -> Hago un push forzado (se utiliza cuando saco commits de mi branch.)
